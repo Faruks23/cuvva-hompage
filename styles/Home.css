@@ -1,0 +1,575 @@
+@font-face {
+  font-family: "Primary";
+  src: url("../Font/RiformaLLWeb-Heavy.woff2") format("woff2");
+
+  /* You can specify additional font properties here if needed */
+}
+
+/* Use the custom font in your CSS for specific elements */
+body {
+  font-family: "Primary";
+}
+p {
+  font-family: neue-haas-grotesk-text, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  perspective: 800px;
+  margin: auto;
+  width: 100%;
+  height: 70px;
+  z-index: 100;
+  transition: background-color 0.2s ease-in-out 0s;
+  position: sticky;
+  top: 0px;
+  background: rgb(5, 2, 36);
+  backdrop-filter: blur(5px);
+
+  color: white;
+}
+.nav-list {
+  gap: 30px;
+  list-style-type: none;
+}
+
+.hero-container {
+  background: radial-gradient(
+      circle closest-corner at center bottom,
+      rgb(166, 68, 226) 5.93%,
+      rgba(101, 68, 226, 0.3) 59.9%,
+      rgba(101, 68, 226, 0) 100%
+    ),
+    linear-gradient(rgb(5, 2, 36), rgb(5, 2, 36));
+  height: 822px;
+  color: white;
+}
+
+.hero {
+  max-width: 500px;
+}
+.hero h1 {
+  font-size: 64px;
+  line-height: 72px;
+  margin-bottom: 24px;
+}
+
+.hero-circle-icon{
+    display: inline-block;
+    width: var(--size,20px);
+    height: var(--size,20px);
+    background-color: var(--fill,#6544E2);
+    flex: 0 0 auto;
+    margin-right: 12px;
+    mask: url("https://content.cuvva.com/assets/ede39dac223b6afe4129df3be59faea5d4fa72d3d52ae3cc4ceec177941b5e44/icons/ic_check_circle_fill.svg") center center / contain no-repeat;
+}
+
+.hero p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 25px;
+  line-height: 32px;
+  font-weight: 500;
+  font-family: neue-haas-grotesk-text, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+}
+
+.hero .app-used {
+  margin-top: 50px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  line-height: 28px;
+  font-family: neue-haas-grotesk-text, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.get-a-quote {
+  margin-top: 48px;
+  width: 330px;
+  height: 46px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  border-radius: 10px;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(230, 230, 234);
+  margin-bottom: 20px;
+}
+
+.our-mission p {
+  color: rgb(5, 2, 36);
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.mission-card {
+  max-width: 411px;
+  height: 550px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: rgba(5, 2, 36, 0.125) 0px 4px 25px;
+}
+.mission-card ul li {
+  font-family: neue-haas-grotesk-text, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 12px;
+}
+
+.check-icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #6544e2;
+  flex: 0 0 auto;
+  mask: url("/icon/ic_check.svg") center center / contain no-repeat;
+}
+
+.badg {
+  font-family: neue-haas-grotesk-text, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0px 6px;
+  width: 40%;
+  min-width: 20px;
+  min-height: 20px;
+  white-space: nowrap;
+  border-radius: 24px;
+  color: rgb(101, 68, 226);
+  background-color: rgb(235, 235, 255);
+  --fill: #6544e2;
+}
+.card-button {
+  font-family: neue-haas-grotesk-text, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  background: rgb(235, 235, 255);
+  border: none;
+  padding: 10px 16px;
+  width: 100%;
+  text-align: center;
+  color: #6544e2;
+}
+
+.card-button:hover {
+  background: rgb(216, 216, 250);
+}
+
+.get-button {
+  font-family: neue-haas-grotesk-text, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  background: rgb(101, 68, 226);
+  border: none;
+  padding: 14px 20px;
+  color: rgb(255, 255, 255);
+}
+
+.timeLine {
+  padding: 96px 0px;
+}
+.timeLine-p {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgb(100, 100, 115);
+}
+.time-card {
+  width: 245px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+
+  line-height: 24px;
+}
+.time-card h5 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(28, 22, 64);
+  border-radius: 100%;
+  margin: 0px auto 32px;
+  width: 35px;
+  height: 36px;
+  color: rgb(255, 255, 255);
+}
+
+.dashed-border {
+  position: absolute;
+  z-index: 0;
+  margin: 0px 15px;
+  top: calc(18px);
+  left: 15%;
+  right: 15%;
+  border-top: 1.125px dashed rgb(230, 230, 234);
+  z-index: -1;
+}
+.car-insurance {
+  padding: 96px 0px;
+}
+
+.car-insurance-details {
+  max-width: 500px;
+  padding-top: 150px;
+}
+.car-insurance-details h1 {
+  color: rgb(5, 2, 36);
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 20px;
+}
+
+.car-insurance-details p {
+  color: rgb(100, 100, 115);
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 28px;
+}
+
+.Trusted-card {
+  flex: 1 1 0%;
+  max-width: 411px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: rgba(5, 2, 36, 0.125) 0px 4px 25px;
+}
+.some-question,
+.no-time {
+  padding: 96px 0px;
+}
+.some-question .container h1 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  color: rgb(5, 2, 36);
+  text-align: center !important;
+}
+
+.question-card {
+  flex: 1 1 0%;
+  max-width: 411px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: rgba(5, 2, 36, 0.125) 0px 4px 25px;
+}
+.we-r-perfect {
+  padding: 96px 0px;
+}
+
+.we-r-container {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.we-r-perfect h1 {
+  font-weight: 900;
+  font-size: 48px;
+  color: rgb(5, 2, 36);
+  line-height: 56px;
+  margin-bottom: 10px;
+  max-width: 520px;
+}
+
+.we-r-perfect p {
+  color: rgb(100, 100, 115);
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  max-width: 520px;
+}
+
+.we-r-container2 {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  justify-content: center;
+  gap: 100px;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.we-r-container3 {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  justify-content: space-between;
+  gap: 100px;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.no-time h6 {
+  font-family: neue-haas-grotesk-text, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  font-size: 20px;
+  line-height: 28px;
+
+  color: rgb(99, 100, 115);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer {
+  background: radial-gradient(
+      100% 100% at 0% 100%,
+      rgb(166, 68, 226) 5.93%,
+      rgba(101, 68, 226, 0.3) 59.9%,
+      rgba(101, 68, 226, 0) 100%
+    ),
+    rgb(5, 2, 36);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 80px 16px 0px;
+  color: white;
+}
+.icon{
+  margin-bottom: 80px;
+}
+.footer-container {
+   display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 32px;
+  margin-bottom: 96px;
+}
+.footer-container a{
+  font-size: 14px;
+  text-decoration: none !important;
+  color:rgba(255, 255, 255, 0.8) ;
+}
+.footer-container a:hover{
+  text-decoration: underline !important;
+}
+.card-heading{
+  margin-bottom: 16px;
+}
+.trams-condition a{
+  text-decoration: none !important;
+  color:rgba(255, 255, 255, 0.8) ;
+}
+
+/* Define font sizes for different screen sizes */
+@media (max-width: 768px) {
+  .hero {
+    width: 100%;
+
+    margin: 0px;
+  }
+  .hero h1 {
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .our-mission p {
+    color: rgb(5, 2, 36);
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+
+  .mission-card {
+    max-width: 351px;
+
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: rgba(5, 2, 36, 0.125) 0px 4px 25px;
+  }
+  .car-insurance-details {
+    width: 100%;
+    padding-top: 150px;
+  }
+
+  .car-insurance-details h1 {
+    color: rgb(5, 2, 36);
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 46px;
+    text-align: center;
+    margin-top: -90px;
+  }
+  .car-insurance-details p {
+    text-align: center;
+  }
+  .car-insurance-image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .car-insurance-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .Trusted-card {
+    max-width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: rgba(5, 2, 36, 0.125) 0px 4px 25px;
+  }
+
+  .some-question .container h1 {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 56px;
+    color: rgb(5, 2, 36);
+    text-align: center !important;
+  }
+
+  .question-card {
+    max-width: 100%;
+  }
+
+  .we-r-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .we-r-perfect h1 {
+    font-weight: 600;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .we-r-perfect p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .we-r-button {
+    display: flex;
+    justify-content: center;
+  }
+  .we-r-container2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .we-r-container3 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .we-r-imag img {
+    width: 100% !important;
+  }
+  .hero-details {
+    display: flex;
+    justify-content: center;
+  }
+  .nav-list {
+    opacity: 0;
+  }
+
+  .menu-item {
+    position: absolute;
+    width: 100%;
+    background: rgb(5, 2, 36);
+    top: 50px;
+    left: 0px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+    z-index: 2;
+    height: 100vh;
+    opacity: 1;
+    transition: height all ease-in-out 0.1s;
+  }
+
+
+   .footer-container{
+      display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 24px;
+    max-width: 1280px;
+    width: 100%;
+    padding: 20px 0px 0px;
+    margin: 0px auto 64px;
+   }
+}
+
+/* 
+@media (min-width: 768px) {
+  body {
+    font-size: 18px; 
+  }
+} */

@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Car and van insurance |Cuvva</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-K6Qh1BUiQPvTcMDOqj63wD5RtXuw8fWmZo8U8R5GAOA57XqBDOiWPh7jCCfn+Nsqnv7l6EbG9R5g8tCcYcNHhMA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles/Home.css" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="header">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 128 26" width="128" class="sc-fAGzit bfdZdF">
+            <path fill="#fff" fill-rule="evenodd"
+              d="M0 13C0 5.82 5.844 0 13.053 0a13.08 13.08 0 019.23 3.808A12.973 12.973 0 0126.106 13c0 7.18-5.844 13-13.053 13C5.844 26 0 20.18 0 13zm4.367-.521a.497.497 0 00.504.52h16.365a.497.497 0 00.504-.52c-.27-4.544-4.056-8.146-8.687-8.146-4.63 0-8.416 3.602-8.686 8.146zM126.336 5.239h-3.152c-.326 0-.508.216-.544.54l-.181 1.802c-1.232-1.622-3.007-2.703-5.398-2.703-5 0-8.623 4.073-8.623 9.227 0 5.046 3.623 9.046 8.623 9.046 2.427 0 4.202-1.045 5.362-2.523l.217 1.73c.036.325.218.541.544.541h3.152c.326 0 .543-.216.543-.54V5.779c0-.324-.217-.54-.543-.54zm-8.732 13.587c-2.645 0-4.565-2.018-4.565-4.757 0-2.847 1.92-4.866 4.565-4.866 2.681 0 4.529 2.199 4.529 4.866 0 2.703-1.848 4.757-4.529 4.757z"
+              clip-rule="evenodd"></path>
+            <path fill="#fff"
+              d="M67.75 5.239h-3.696c-.326 0-.543.216-.543.54v9.768c0 1.261-1.269 3.424-3.84 3.424-1.704 0-3.407-1.01-3.407-3.929V5.779c0-.324-.217-.54-.543-.54h-3.695c-.327 0-.544.216-.544.54v10.128c0 4.721 2.754 7.46 6.739 7.46 2.246 0 4.058-1.26 5.29-2.99l.145 1.982c.036.324.217.54.543.54h3.55c.327 0 .544-.216.544-.54V5.779c0-.324-.217-.54-.544-.54zM83.622 5.671L79.31 17.35 74.963 5.67c-.109-.288-.362-.432-.652-.432h-3.732c-.399 0-.58.216-.435.612l6.666 16.616c.11.288.363.432.653.432h3.695c.29 0 .544-.144.652-.432L88.44 5.85c.145-.396-.036-.612-.434-.612h-3.732c-.29 0-.543.144-.652.432zM99.421 17.349l4.312-11.678c.108-.288.362-.432.652-.432h3.731c.399 0 .58.216.435.612l-6.63 16.616c-.109.288-.362.432-.652.432h-3.696c-.29 0-.543-.144-.652-.432L90.255 5.85c-.145-.396.036-.612.435-.612h3.731c.29 0 .544.144.652.432l4.348 11.678zM47.16 8.49a.73.73 0 01-.525.262.792.792 0 01-.539-.204l-.002-.002-.001-.001c-1.153-1.01-2.571-1.634-4.324-1.634-3.314 0-5.935 2.617-5.935 6.162 0 3.517 2.62 6.134 5.935 6.134 1.753 0 3.171-.623 4.324-1.633l.001-.002.002-.001a.791.791 0 01.54-.204.73.73 0 01.525.262l1.89 2.022c.134.136.242.313.242.528 0 .218-.11.397-.248.533a10.187 10.187 0 01-7.247 2.984c-5.93 0-10.678-4.693-10.678-10.623 0-5.957 4.747-10.65 10.678-10.65 2.88-.001 5.407 1.152 7.247 2.983.137.136.248.315.248.533 0 .216-.108.393-.243.528L47.16 8.49z">
+            </path>
+          </svg></a>
+        </div>
+        <div class="item d-md-flex align-items-center gap-5">
+          <ul id="list" class="nav-list d-none d-md-flex align-items-center mt-2">
+            <li>Car and van insurance</li>
+            <li>Help</li>
+            <li>About us</li>
+            <li>Refer a friend</li>
+            <li>sign in</li>
+          </ul>
+          <div class="d-flex gap-2 ">
+            <button class="get-button" style=" padding : 10px 19px ;">Get a quote</button>
+
+            <div id="menu" class="d-md-none d-flex justify-content-center align-items-center rounded-3"
+              style="background-color: white; padding: 0px 15px;">
+              <img id="open" class="" width="14" style="background-color: white;" height="14" src="/icon/menu.png"
+                alt="">
+              <img id="clos" class="d-none" width="14" style="background-color: white;" height="14"
+                src="/icon/close.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- navbar close -->
+
+  <!-- hero section -->
+  <div class="hero-container">
+    <div class="container h-100">
+      <div class="main-hero d-flex  justify-content-md-between align-items-center h-100">
+        <div class="hero">
+          <h1 class=" ">The ultra-flexible way to insure a car</h1>
+          <p>
+            Join 1 million+ people getting a great deal on short-term car
+            insurance. Policies from 1 hour to 28 days. All sorted from your
+            phone
+          </p>
+          <div class=" hero-details">
+            <div class="app-used d-flex flex-column gap-3">
+              <div>
+                <div class="hero-circle-icon">
+                </div>
+                8 million+ policies sold
+              </div>
+              <div>
+                <div class="hero-circle-icon">
+                </div>
+                1.5 million+ cars insured
+              </div>
+              <div>
+               <div class="hero-circle-icon">
+               </div>
+                2.5 million+ app downloads
+              </div>
+            </div>
+          </div>
+
+          <div class=" hero-details">
+            <div class=" ">
+              <button class="get-a-quote">Get a quick quote</button>
+
+              <div class="app-download">
+                <img src="/Images/appstore.svg" width="162" height="48" class="img-fluid" style="margin-right: 5px"
+                  alt="" />
+                <img src="/Images/playstore.svg" width="162" height="48" class="img-fluid" alt="" />
+              </div>
+              <div class="star d-flex justify-content-center" style="width: 330px; margin-top: 40px">
+                <img width="244" height="30" src="/Images/visionary.svg" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="hero-mage align-self-center d-none d-md-block ">
+          <img width="500" height="500" src="./Images/il_boy_girl_sharing_car_03.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- hero section close -->
+
+  <!-- our mission -->
+  <div class="our-mission">
+    <div class="container" style="padding: 96px 0px">
+      <p class="" style="text-align: center">
+        We’re on a mission to give everyone affordable <br class=" d-none d-md-block" />
+        access to a car anytime, anywhere.
+      </p>
+      <div class="card-container" style="padding-top: 62px">
+        <div class="d-flex justify-content-center  align-items-center">
+          <div>
+            <div class="d-md-flex justify-content-between " style="gap:30px">
+              <div class="col-md-4 mb-4">
+                <div class="mission-card " style="position:  relative;">
+                  <img width="75" height="75" src="/Images/il_stm_timer.svg" alt="" class="mb-3" />
+                  <h4 class="mb-2">Fully comprehensive cover</h4>
+                  <h6 class="badg">Ultimate flexibility</h6>
+                  <ul class=" " style="
+                    list-style-type: none;
+                    margin: 0px;
+                    padding: 0px;
+                    color: rgb(100, 100, 115);
+                  ">
+                    <li class="mb-3 d-flex align-items-center gap-2">
+                      <div class="check-icon"></div>
+                      <div>Fully comprehensive cover</div>
+                    </li>
+                    <li class="mb-3 d-flex align-items-center gap-2">
+                      <div class="check-icon"></div>
+                      <div>Policies from 1 hour up to 28 days</div>
+                    </li>
+                    <li class="mb-3 d-flex align-items-center gap-2">
+                      <div class="check-icon"></div>
+                      <div>Instantly extend your cover in the app</div>
+                    </li>
+                    <li class="mb-3 d-flex align-items-center gap-2">
+                      <div class="check-icon"></div>
+                      <div>Borrow any car - you don’t need to be the owner</div>
+                    </li>
+                    <li class="mb-3 d-flex align-items-center gap-2">
+                      <div class="check-icon"></div>
+                      <div>
+                        Separate policies mean the car owner’s no claims bonus is
+                        protected
+                      </div>
+                    </li>
+                  </ul>
+                  <button class="card-button"
+                    style="  width:97%;position:  absolute; bottom: 20px; left: 0; margin: 0px 5px;">
+                    Temporary insurance
+                  </button>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-4">
+                <div class="mission-card" style=" position: relative;">
+                  <img width="75" height="75" src="/Images/il_learner_tilted.svg" alt="" class="mb-3" />
+                  <h4 class="mb-2">Learner driver insurance</h4>
+                  <h6 class="badg">Perfect for practising</h6>
+                  <ul class=" " style="
+                    list-style-type: none;
+                    margin: 0px;
+                    padding: 0px;
+                    color: rgb(100, 100, 115);
+                  ">
+                    <li class="mb-3 d-flex align-items-center gap-2">
+                      <div class="check-icon"></div>
+                      <div>
+                        Hourly cover for learners with a provisional licence
+                      </div>
+                    </li>
+                    <li class="mb-3 d-flex align-items-center gap-2">
+                      <div class="check-icon"></div>
+                      <div>Up to 6 hours per day with a supervisor</div>
+                    </li>
+                    <li class="mb-3 d-flex align-items-center gap-2">
+                      <div class="check-icon"></div>
+                      <div>For practising in someone else’s car or your own</div>
+                    </li>
+                    <li class="mb-3 d-flex align-items-center gap-2">
+                      <div class="check-icon"></div>
+                      <div>Owner’s NCB protected</div>
+                    </li>
+                    <li class="mb-3 d-flex align-items-center gap-2">
+                      <div class="check-icon"></div>
+                      <div>
+                        Usually cheaper than being added to your parent's
+                        insurance
+                      </div>
+                    </li>
+                  </ul>
+                  <button style="width:97%; position:  absolute; bottom: 20px; left: 0; margin: 0px 5px;"
+                    class="card-button">Learner insurance</button>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-4">
+                <div class="mission-card " style="position: relative;">
+                  <img width="75" height="75" src="/Images/il_van.svg" alt="" class="mb-3" />
+                  <h4 class="mb-2">Flexible van insurance</h4>
+                  <h6 class="badg">Get the job done</h6>
+                  <ul class=" " style="
+                    list-style-type: none;
+                    margin: 0px;
+                    padding: 0px;
+                    color: rgb(100, 100, 115);
+                  ">
+                    <li class="mb-3 d-flex align-items-center gap-2">
+                      <div class="check-icon"></div>
+                      <div>
+                        For commuting, driving to sites, and carrying your own
+                        equipment
+                      </div>
+                    </li>
+                    <li class="mb-3 d-flex align-items-center gap-2">
+                      <div class="check-icon"></div>
+                      <div>Lend to a friend or colleague</div>
+                    </li>
+                    <li class="mb-3 d-flex align-items-center gap-2">
+                      <div class="check-icon"></div>
+                      <div>Carriage of own goods cover</div>
+                    </li>
+                    <li class="mb-3 d-flex align-items-center gap-2">
+                      <div class="check-icon"></div>
+                      <div>Business class 1 cover</div>
+                    </li>
+                    <li class="mb-3 d-flex align-items-center gap-2">
+                      <div class="check-icon"></div>
+                      <div>Fully comprehensive</div>
+                    </li>
+                  </ul>
+                  <button style="width:97%; position:  absolute; bottom: 20px; left: 0; margin: 0px 5px;"
+                    class="card-button" style="margin-top: 44px">
+                    Temp van insurance
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center mt-5">
+          <button class="get-button">Get a quick quate</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- our mission  close-->
+
+  <!-- time lin card section -->
+  <div class="timeLine">
+    <div class="container">
+      <div class="d-flex justify-content-center">
+        <div class=" " style="text-align: center; max-width: 560px">
+          <h1 style="color: rgb(5, 2, 36)">Car insurance on your terms</h1>
+          <p class="timeLine-p">
+            Pay for as long as you like with short-term insurance policies. No
+            interest. No tie-ins. No deposits. 9am to 9pm customer support.
+          </p>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <div class="time-cards-container d-md-flex " style="margin: 50px 240px; gap: 30px; position: relative">
+          <div class="dashed-border d-none d-md-block"></div>
+          <div class="time-card">
+            <div class="number">1</div>
+            <h5>Create an account</h5>
+            <p style="color: rgb(100, 100, 115)">
+              Download the free Cuvva app and sign up with a few simple steps.
+            </p>
+          </div>
+          <div class="time-card">
+            <div class="number">2</div>
+            <h5>Get a quote</h5>
+            <p style="color: rgb(100, 100, 115)">
+              Enter some details about you, the car and trip to get your quote.
+            </p>
+          </div>
+          <div class="time-card">
+            <div class="number">3</div>
+            <h5>Get driving</h5>
+            <p style="color: rgb(100, 100, 115)">
+              Buy your policy, hop in and enjoy fully comprehensive cover.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- time lin card section -->
+
+  <!-- car insurance 1-->
+  <div class="car-insurance">
+    <div class="container">
+
+      <div class="d-flex justify-content-center ">
+        <div class="d-flex   car-insurance-content justify-content-md-between ">
+          <div class=" ">
+            <div class="car-insurance-details">
+              <h1>Car insurance for whatever, whenever</h1>
+              <p>
+                Policies from 1 hour to 28 days. Whenever you need to get behind
+                the wheel, we've got you covered.
+              </p>
+            </div>
+          </div>
+          <div class="car-insurance-image ">
+            <img width="500" height="500" src="/Images/stm_carousel_dark.png" alt="" />
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- car insurance clos 1 -->
+
+  <!-- car insurance 2-->
+  <div class="car-insurance">
+    <div class="container">
+      <div class="d-md-flex justify-content-md-center" style="gap: 150px">
+        <div class="car-insurance-image ">
+          <img width="500" height="500" src="/Images/manage_subscription_extend_dark.png" alt="" />
+        </div>
+        <div class=" ">
+          <div class="car-insurance-details">
+            <h1>Sort it all from your phone</h1>
+            <p>
+              Manage your policies. Change your details. Extend your cover.
+              Set MOT and tax reminders. Get answers to your questions from
+              our 365-day customer support team. All via our app.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- car insurance clos 2 -->
+
+  <!-- Trusted section -->
+  <div class="timeLine  Trusted">
+    <div class="flex justify-content-center">
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <div class=" " style="text-align: center; width: 560px">
+            <h1 style="color: rgb(5, 2, 36)">
+              Trusted by 1 million+ drivers
+            </h1>
+            <p style="
+                  text-align: center;
+                  font-weight: 100;
+                  padding-left: 10px;
+                  line-height: 32px;
+                  font-size: 20px;
+                  color: rgb(100, 100, 115);
+                ">
+              We’ve insured 1.5m+ cars, sorted 8m+ policies, and supported 1
+              million+ drivers. We're rated 4.8 out of 5 on the App Store, and
+              4.5 out of 5 on Google Play. Plus, we're FCA regulated.
+            </p>
+          </div>
+        </div>
+
+        <div class="d-md-flex justify-content-md-between gap-5" style="padding-top: 62px">
+          <div class="Trusted-card col mb-5">
+            <h5>The Sunday Times</h5>
+            <p style="color: rgb(100, 100, 115)">
+              ‘'You’re fully insured to drive another person’s car but don’t
+              need to worry about affecting their no-claims bonus if you have
+              an accident.''
+            </p>
+          </div>
+          <div class="Trusted-card col mb-5">
+            <h5>Get a quote</h5>
+            <p style="color: rgb(100, 100, 115)">
+              Enter some details about you, the car and trip to get your
+              quote.
+            </p>
+          </div>
+          <div class="Trusted-card col mb-5">
+            <h5>Naomi Metzger - British Athlete</h5>
+            <p style="color: rgb(100, 100, 115)">
+              '‘Cuvva is a great option for me as it allows me to easily get a
+              policy with a click of a button… complete peace of mind and
+              flexibility’' Get a quick quote
+            </p>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center mt-5">
+          <button class="get-button">Get a quick quate</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Trusted card section -->
+
+  <!-- Have some questions? section -->
+
+  <div class="some-question">
+    <div class="container">
+      <h1>Have some questions?</h1>
+
+      <div class="question-card-container d-flex justify-content-center" style="padding-top: 62px">
+        <div class="d-md-flex" style="gap: 30px">
+          <div class="question-card mb-4">
+            <img src="/questionSectionimage/il_app_chat.svg" width="75" height="75" class="mb-3" alt="" />
+
+            <h5 class="mb-2">Real human customer support</h5>
+            <p class="" style="
+                  font-size: 18px;
+                  color: rgb(100, 100, 115);
+                  font-family: none;
+                ">
+              Sick of hold music? So are we. It’s why we made sure real people
+              are there to help you. We’re available every day between 9am and
+              9pm - even on Christmas.
+            </p>
+            <button class="card-button" style="margin-top: 20px">
+              get help
+            </button>
+          </div>
+          <div class="question-card mb-4">
+            <img src="/questionSectionimage/il_car_question_mark.svg" width="75" height="75" class="mb-3" alt="" />
+
+            <h5 class="mb-2">Car insurance explained</h5>
+            <p class="" style="
+                  font-size: 18px;
+                  color: rgb(100, 100, 115);
+                  font-family: none;
+                ">
+              We know insurance can seem complicated, so we’ve done our best
+              to simplify it. Our ‘How Insurance Works’ library has 150+
+              guides about everything from excess to renewals.
+            </p>
+            <button class="card-button" style="margin-top: 20px">
+              Insurance explained
+            </button>
+          </div>
+          <div class="question-card mb-4">
+            <img src="/questionSectionimage/il_cuvva_app_icon.svg" width="75" height="75" class="mb-3" alt="" />
+
+            <h5 class="mb-2">About us</h5>
+            <p class="" style="
+                  font-size: 18px;
+                  color: rgb(100, 100, 115);
+                  font-family: none;
+                ">
+              Cuvva is changing the way people get around. Learn more about
+              what drives us (or just check out photos of our office dogs! 🐶)
+            </p>
+            <button class="card-button" style="margin-top: 43px">
+              Our mission
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Have some questions? end -->
+
+  <!-- We're perfect for borrowing section -->
+  <div class="we-r-perfect d-flex justify-content-center ">
+    <div class="container">
+      <div class="">
+
+        <div class="we-r-container">
+          <div class="we-r-content">
+            <h1>We're perfect for borrowing</h1>
+            <p>
+              We’ve made it just as easy to get insured on someone else’s car as
+              it is your own. Borrow a friend or family member’s car in minutes
+              with fully comprehensive cover. And your no claims bonus is
+              protected, because you’ll have your own policy.
+            </p>
+            <div class="we-r-button">
+              <button class="get-button" style="margin-top: 100px">
+                Borrow a car
+              </button>
+            </div>
+          </div>
+          <div class="we-r-imag">
+            <img src="/il_boy_girl_sharing_car_simple.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- We're perfect for borrowing section end -->
+
+  <!-- We're perfect for borrowing section 2 -->
+  <div class="we-r-perfect">
+    <div class="container">
+      <div class="we-r-container2">
+        <div class="we-r-imag">
+          <img src="/il_car_key.svg" alt="" style="width:500px; height: 500px" />
+        </div>
+
+        <div class="we-r-content">
+          <h1>… and lending</h1>
+          <p>
+            Earn some brownie points and lend your car to a friend or family
+            member. They’ll get their own separate policy, so your insurance
+            and no claims bonus are completely protected.
+          </p>
+          <div class="we-r-button">
+            <button class="get-button" style="margin-top: 100px">
+              Lend a car
+
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- We're perfect for borrowing section  2 end-->
+
+  <!-- We're perfect for borrowing section 3 -->
+  <div class="we-r-perfect">
+    <div class="container">
+      <div class="we-r-container3">
+        <div class="we-r-content">
+          <h1>Spread the love (and get a tenner!)</h1>
+          <p>
+            It pays to be nice. Refer a friend to Cuvva and you’ll both get
+            £10 when they buy their first temporary policy.
+          </p>
+          <div class="we-r-button">
+            <button class="get-button" style="margin-top: 100px">
+              Refer a friend
+
+            </button>
+          </div>
+        </div>
+
+        <div class="we-r-imag">
+          <img src="/il_coins-in-pocket.png" alt="" style="width: 500px" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- We're perfect for borrowing section  3 end-->
+
+  <div class="no-time ">
+    <div class="container">
+      <h1 style="text-align: center">No time to wait!</h1>
+      <h6>Looking for something specific?</h6>
+
+      <div class="question-card-container d-flex justify-content-center" style="padding-top: 62px">
+        <div class="d-md-flex" style="gap: 30px">
+          <div class="question-card mb-4">
+            <img src="/NoTimeImage/il_stopwatch.svg" width="75" height="75" class="mb-3" alt="" />
+
+            <h5 class="mb-2">1 hour insurance</h5>
+            <p class="" style="
+                  font-size: 18px;
+                  color: rgb(100, 100, 115);
+                  font-family: none;
+                ">
+              Our hourly policies are perfect for if you want to drive someone
+              else’s car (or lend your own). Cover begins at £10.39 and can
+              start instantly or you can book it ahead of time.
+            </p>
+            <button class="card-button" style="margin-top: 20px">
+              1 hour cover
+            </button>
+          </div>
+          <div class="question-card mb-4">
+            <img src="/NoTimeImage/il_timer_purple.svg" width="75" height="75" class="mb-3" alt="" />
+
+            <h5 class="mb-2">1 day insurance</h5>
+            <p class="" style="
+                  font-size: 18px;
+                  color: rgb(100, 100, 115);
+                  font-family: none;
+                ">
+              Hit the beach, head across town to visit a friend or smash out
+              that to-do list. 1 day’s cover starts from £18.19 - and it’s
+              fully comprehensive as usual.
+            </p>
+            <button class="card-button" style="margin-top: 20px">
+              1 day cover
+            </button>
+          </div>
+          <div class="question-card mb-4">
+            <img src="/NoTimeImage//il_questionaire_about_vehicle_saloon_green.svg" width="75" height="75" class="mb-3"
+              alt="" />
+
+            <h5 class="mb-2">Drive a new car home</h5>
+            <p class="" style="
+                  font-size: 18px;
+                  color: rgb(100, 100, 115);
+                  font-family: none;
+                ">
+              When you buy a new car, you’ll need insurance right away to get
+              it home. That’s where Cuvva’s hourly drive away cover comes in.
+            </p>
+            <button class="card-button" style="margin-top: 43px">
+              Drive away cover
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+
+  <footer class="footer">
+    <div class=" container">
+      <div class=" icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 128 26" width="128" class="sc-fAGzit bfdZdF">
+          <path fill="#fff" fill-rule="evenodd"
+            d="M0 13C0 5.82 5.844 0 13.053 0a13.08 13.08 0 019.23 3.808A12.973 12.973 0 0126.106 13c0 7.18-5.844 13-13.053 13C5.844 26 0 20.18 0 13zm4.367-.521a.497.497 0 00.504.52h16.365a.497.497 0 00.504-.52c-.27-4.544-4.056-8.146-8.687-8.146-4.63 0-8.416 3.602-8.686 8.146zM126.336 5.239h-3.152c-.326 0-.508.216-.544.54l-.181 1.802c-1.232-1.622-3.007-2.703-5.398-2.703-5 0-8.623 4.073-8.623 9.227 0 5.046 3.623 9.046 8.623 9.046 2.427 0 4.202-1.045 5.362-2.523l.217 1.73c.036.325.218.541.544.541h3.152c.326 0 .543-.216.543-.54V5.779c0-.324-.217-.54-.543-.54zm-8.732 13.587c-2.645 0-4.565-2.018-4.565-4.757 0-2.847 1.92-4.866 4.565-4.866 2.681 0 4.529 2.199 4.529 4.866 0 2.703-1.848 4.757-4.529 4.757z"
+            clip-rule="evenodd">
+
+          </path>
+          <path fill="#fff"
+            d="M67.75 5.239h-3.696c-.326 0-.543.216-.543.54v9.768c0 1.261-1.269 3.424-3.84 3.424-1.704 0-3.407-1.01-3.407-3.929V5.779c0-.324-.217-.54-.543-.54h-3.695c-.327 0-.544.216-.544.54v10.128c0 4.721 2.754 7.46 6.739 7.46 2.246 0 4.058-1.26 5.29-2.99l.145 1.982c.036.324.217.54.543.54h3.55c.327 0 .544-.216.544-.54V5.779c0-.324-.217-.54-.544-.54zM83.622 5.671L79.31 17.35 74.963 5.67c-.109-.288-.362-.432-.652-.432h-3.732c-.399 0-.58.216-.435.612l6.666 16.616c.11.288.363.432.653.432h3.695c.29 0 .544-.144.652-.432L88.44 5.85c.145-.396-.036-.612-.434-.612h-3.732c-.29 0-.543.144-.652.432zM99.421 17.349l4.312-11.678c.108-.288.362-.432.652-.432h3.731c.399 0 .58.216.435.612l-6.63 16.616c-.109.288-.362.432-.652.432h-3.696c-.29 0-.543-.144-.652-.432L90.255 5.85c-.145-.396.036-.612.435-.612h3.731c.29 0 .544.144.652.432l4.348 11.678zM47.16 8.49a.73.73 0 01-.525.262.792.792 0 01-.539-.204l-.002-.002-.001-.001c-1.153-1.01-2.571-1.634-4.324-1.634-3.314 0-5.935 2.617-5.935 6.162 0 3.517 2.62 6.134 5.935 6.134 1.753 0 3.171-.623 4.324-1.633l.001-.002.002-.001a.791.791 0 01.54-.204.73.73 0 01.525.262l1.89 2.022c.134.136.242.313.242.528 0 .218-.11.397-.248.533a10.187 10.187 0 01-7.247 2.984c-5.93 0-10.678-4.693-10.678-10.623 0-5.957 4.747-10.65 10.678-10.65 2.88-.001 5.407 1.152 7.247 2.983.137.136.248.315.248.533 0 .216-.108.393-.243.528L47.16 8.49z">
+
+          </path>
+        </svg>
+      </div>
+      <div class="footer-container">
+        <div class="card-1">
+          <div class="card-heading">Use Cuvva for</div>
+          <div class="d-flex flex-column " style="gap:16px ;">
+            <a class="" href="/">Temporary car insurance</a>
+            <a class="" href="/">Insuring a car</a>
+            <a class="" href="/">Driving a new car home</a>
+            <a class="" href="/">Learning to drive</a>
+            <a class="" href="/">1 hour insurance</a>
+            <a class="" href="/">1 day insurance</a>
+            <a class="" href="/">Weekend insurance</a>
+            <a class="" href="/">1 week insurance</a>
+            <a class="" href="/">Borrowing a van</a>
+          </div>
+        </div>
+        <div class="card-2">
+          <div class="card-heading">Help</div>
+          <a rel="noopener noreferrer" target="_blank" class="" href="">Help centre</a>
+          <div class="d-flex flex-column " style="gap:16px ;">
+
+            <a class="" href='/'>Guides</a>
+            <a class="" href="/">Car details checker</a>
+            <a class="" href="">Insurance group checker</a>
+            <a class="" href="/">Free tools</a>
+          </div>
+        </div>
+        <div class="card-3">
+          <div class="card-heading">Company</div>
+          <div class="d-flex flex-column " style="gap:16px ;">
+
+            <a class="" href="">About us</a>
+            <a class="" href="">Careers</a>
+            <a rel="" target="_blank">Press</a>
+            <a class="" href="">Blog</a>
+          </div>
+
+        </div>
+        <div class="card-4">
+          <div class="card-heading">Follow</div>
+
+          <div class="d-flex flex-column " style="gap:16px ;">
+
+            <a rel="noopener noreferrer" target="_blank" class="" href="">Facebook</a>
+            <a rel="noopener noreferrer" target="_blank" class="" href="">X</a>
+            <a rel="noopener noreferrer" target="_blank" class="" href="">Instagram</a>
+            <a rel="noopener noreferrer" target="_blank" class="" href="">TikTok</a>
+            <a rel="noopener noreferrer" target="_blank" class="" href="">LinkedIn</a>
+          </div>
+        </div>
+        <div class="card-5 ">
+          <div class='d-flex flex-column' style="gap: 16px;">
+            <a rel="nofollow" target="_blank"><img width="170" height="50"
+                src="https://content.cuvva.com/assets/99c9331bd94d8fa3bd8726a6c46e0db3cd54e574302cf65d40cc56b7885c508b/stores/appstore.svg"
+                alt="Download on the App Store"></a>
+            <a rel="nofollow" target="_blank">
+              <img width="170" height="50"
+                src="https://content.cuvva.com/assets/94119c7032d6187ba15b3120595da9eab70e172b8d7f76ebfbe6b73f451e23e8/stores/playstore.svg"
+                alt="Get it on Google Play"></a>
+          </div>
+        </div>
+      </div>
+      <div class="  d-md-flex  justify-content-between align-item-center gap-5 " style="padding-bottom: 100px;">
+        <div class=" trams-condition d-flex gap-3">
+          <a href="">Cookie policy</a>
+          <a href="">Privacy notice</a>
+          <a href="">Terms &amp; conditions</a>
+        </div>
+        <div class=""
+          style="font-size: 13px; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+          Cuvva is authorised and regulated by the UK Financial Conduct Authority. (#690273)
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- footer  end-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="mian.js"></script>
+</body>
+
+</html>
